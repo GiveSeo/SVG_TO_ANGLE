@@ -5,12 +5,12 @@ svgpathtools, xml.etree.ElementTree를 이용하여 SVG파싱을 진행해 좌�
 
 
 ## 파일 구조
-├── config.py       # 설정 파일 (로봇팔 길이, 펄스 단위, SVG 파일 경로)
-├── parse.py        # SVG 파싱 및 곡선-직선 변환
-├── util.py         # 역기구학, 좌표 분할, 시각화 함수
-├── main.py         # 메인 실행 파일
-├── Mouse.svg       # 입력 SVG 파일 (예시)
-└── output.json  # 출력 JSON 파일 (생성됨)
+├── config.py       # 설정 파일 (로봇팔 길이, 펄스 단위, SVG 파일 경로)<br>
+├── parse.py        # SVG 파싱 및 곡선-직선 변환<br>
+├── util.py         # 역기구학, 좌표 분할, 시각화 함수<br>
+├── main.py         # 메인 실행 파일<br>
+├── Mouse.svg       # 입력 SVG 파일 (예시)<br>
+└── output.json  # 출력 JSON 파일 (생성됨)<br>
 
 ## 사용 방법
 config.py의 파일에 다음 정보를 사용하고자 하는 로봇 정보와 svg 파일 이름과 일치시킵니다.<br>
@@ -76,4 +76,5 @@ k2 = L2 * sin_t2 <br>
 theta1 계산: θ1 = atan2(y, x) - atan2(k2, k1)<br>
 
 ## 기타 설정 시 주의사항
+
 PULSE 단위, MAX_LENGTH, MAX_ERR에 따라서 그림의 정확도가 달라질 수 있습니다.(PULSE 단위의 각도가 낮을 수록, MAX_LENGTH가 짧을 수록, MAX_ERR가 낮을 수록 그림이 정확하게 그려집니다.)
