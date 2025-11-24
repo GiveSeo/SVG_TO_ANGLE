@@ -12,6 +12,7 @@ svgpathtools, xml.etree.ElementTree를 이용하여 SVG파싱을 진행해 좌�
 ├── Mouse.svg       # 입력 SVG 파일 (예시)<br>
 └── output.json  # 출력 JSON 파일 (생성됨)<br>
 
+## 코드 수정
 ## 사용 방법
 config.py의 파일에 다음 정보를 사용하고자 하는 로봇 정보와 svg 파일 이름과 일치시킵니다.<br>
 ```python
